@@ -38,3 +38,44 @@
     <script src="index.js"></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="WelcometoCommunityCSS.css">
+  </head>
+  <body>
+    <div class='container'>
+      <div class='login-container'>
+        <form class="login-form">
+          <p class ='lf-text-1'>Welcome to Community</p><br>
+          <p class ='lf-text-2'>You need to enter your details .To enter the Community</p><br>
+
+          <!-- Id,Name for "Name" is lf-name -->
+          <label for="lf-name">Name</label> 
+          <input type="email" id="lf-name" name="lf-name" placeholder='Enter your name' onkeyup='email_check();'><br>
+          
+          <label for="lf-dob">Date of Birth</label>
+          <input type="date" id="lf-dob" name="lf-dob" placeholder='Date of Birth'><br>
+          
+          <label for="lf-dob">USN</label>
+          <input type="text" id="lf-usn" name="lf-usn" placeholder='Enter your USN'><br>
+          
+          <label for="lf-email">Email</label>
+          <input type="email" id="lf-email" name="lf-email" placeholder='Enter your Email'><br>
+
+          <a href = '#' id='login'>Login In</a><br>
+          
+          
+          </form>
+      </div>
+      <div class='lf-image'></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
