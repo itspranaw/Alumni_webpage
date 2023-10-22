@@ -19,7 +19,6 @@ header{
   position: sticky;
   top: 0;
   background:white;
-  z-index:1;
 }
 .container{
   width:100%;
@@ -82,102 +81,36 @@ header{
       color: #fff;
       font-weight: bold;
 }
+
+
 /*--------------  css for section & article----------------*/
-.event_container_layout{
+.news_container_layout{
   display: flex;
-  flex-direction:column;
   width:100%;
+  height:auto;
 
 }
-.event_container_layout h5{
-  color: #000;
-  font-family: Adamina;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-left:135px;
-}
-.event_container{
+.news_container{
   width:100%;
+  height:auto;
   padding:20px;
   flex-wrap:wrap;
 }
-/*-----------event banner----------*/
-.event_banner{
-  flex-direction:column;
-  background:black;
-  height:auto;
-  width:auto;
-  color:white;
-  padding:10px;
-}
-.event_banner h1{
-    flex-shrink: 0;
-    color: #fff;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: capitalize;
-}
-.event_banner h6{
-  margin:10px;
-  width: 727.5px;
-  height: 50.012px;
-  flex-shrink: 0;
-  color: #FFF;
-  text-align: center;
-  font-family: Raleway;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 25px; /* 156.25% */
-}
-.event_banner .getstarted{
-  margin:10px;
-  display: inline-flex;
-  height: 22.598px;
-  padding: 18px 34px;
-  align-items: center;
-  gap: 12px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  background:#FC5252;
-}
-.event_banner span{
-  width: 1085.25px;
-  height: 61.015px;
-  flex-shrink: 0;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  opacity: 0.5;
-}
-.event_banner {
-  background-image:url('');
-}
-
    /*------ css of cards ---*/
-.event_card{
+.news_card{
   width: 316px;
   height:324px;
   flex-direction: column;
   align-items: flex-start;
   margin:10px 10px 10px 10px;
-  background:  #fff;
+  background:  #FFF;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.08);
 }
-.event_card_image{
+
+.card_image{
   height: 162px;
   background-color:black;
   border-radius:10px;
-  color:white;
 }
 .card_image img{
   object-fit:fit;
@@ -187,30 +120,30 @@ header{
 .card_content{
   display: flex;
   padding: 16px;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
 }
-.card_content .date h4{
-  color:blue;
-}
 .heading{
   color: #000;
-font-family: Adamina;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%; /* 24px */
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Adamina;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 18px; /* 128.571% */
 }
-.description{
-  color: #6A6A6A;
-font-family: Adamina;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-  line-height: 150%; /* 21px */}
-.description a{
+.content{
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Adamina;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+}
+.content a{
   text-decoration:none;
 }
 /*--------------  css for footer----------------*/
@@ -294,9 +227,6 @@ height: 1px;
       z-index:2;
      
   }
-  .event_container_layout h5{
-  margin-left:50px;
-  }
     .menu-btn .bar {
       width: 30px;
       height: 4px;
@@ -327,11 +257,11 @@ height: 1px;
       transform: translate(-50%, 0%) rotate(-45deg); 
     }
     .nav-links{
-      position: absolute;    
-      top:0;
+      position: absolute;
+      top:50px;
       left: 0;
       background-color: #fff;
-      height: 100vh;
+      height: 300px;
       width: 225px;
       margin: 0;
       padding: 0;
@@ -340,6 +270,7 @@ height: 1px;
       align-items: center;
       transform: translateX(-100%);
       transition: 0.4s ease all;
+      z-index: 10;
   }
   .nav-links li a{
     color: #000;
@@ -379,4 +310,17 @@ height: 1px;
     margin-top:0px;
   }
 
-}
+  @media( max-width:350){
+    .news_container{
+    display:block;
+    }
+    .news_card{
+      width: 100%;
+      height:324px;
+      flex-direction: column;
+      align-items: flex-start;
+      margin:10px 10px 10px 10px;
+      background:  #FFF;
+      box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.08);
+    }
+  }
