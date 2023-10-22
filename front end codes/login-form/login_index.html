@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login_style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-container">
+        <form class="login-form">
+          <p class="lf-text-1">Welcome</p>
+          <p class="lf-text-2">Welcome back! Please enter your details.</p>
+          <br />
+          <label for="lf-email">Email</label>
+          <input
+            type="email"
+            id="lf-email"
+            name="email"
+            placeholder="Enter your email"
+            onkeyup="email_check();"
+          /><br />
+          <label for="lf-password">Password</label>
+          <input
+            type="password"
+            id="lf-password"
+            name="password"
+            placeholder="Password"
+          /><br />
+
+          <a href="#" id="signin">Sing In</a><br />
+          <button type="button" class="login-with-google-btn" disable>
+            Sign in with Google</button
+          ><br />
+          <p class="lf-text-2">
+            Don't have account?<a href=""> Signup</a>
+            <a href="#"> &nbsp; &nbsp; Forgot password</a>
+          </p>
+          <br />
+        </form>
+      </div>
+      <div class="lf-image"></div>
+    </div>
+    <script src="login_index.js"></script>
+  </body>
+</html>
