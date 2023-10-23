@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Login</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="stylesheet" href="givingPage1CSS.css">
+    </head>
+    <body>
+    
+    <header>
+        <div class="container">
+            <a href="#" class="logo">Logo</a>
+                <nav class="navbar">
+                    
+                    <ul class="nav-links">
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Giving</a></li>
+                        <li><a href="#">Program & Event</a></li>
+                        <li><a href="#">College</a></li>
+                    <li><a href="#">About us</a></li>
+                        <button>Sign In</button>
+                        <button>Sign Up</button>
+                    </ul>
+                
+                    <div id='burger'>
+                    <div class="menu-btn">  
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+        </div>
+    </header>
+
+    <section class="sections formSection">
+        
+        <div class="login-container scanner">
+            <p class ='lf-text-1 center'>Scan and pay</p>     
+            <img src="Images/image 2.png" alt="" srcset="">
+            
+        </div>
+    </section>
+
+    <sction class="sections formSection">
+        
+        <div class="formArea">
+            <div class='login-container'>
+                <form class="login-form">
+                <p class ='lf-text-1'>Make a Gift</p>
+                <p class ='lf-text-2'>Thank you for considering a gift to Srinivas Institute of Technology. If you have questions or need assistance making a gift, you can call 800-VERITAS (837-4827) or email ads@harvard.edu.</p><br>
+
+                
+
+                <label for="lf-company" class="bl">Gift amount</label>
+                <div class="con">
+                    <input readonly type="text" id="lf-am" class="lf-am" name="lf-am" placeholder='$500'><br>
+                    <input readonly type="text" id="lf-am" class="lf-am" name="lf-am" placeholder='$1000'><br>
+                    <input readonly type="text" id="lf-am" class="lf-am" name="lf-am" placeholder='$2000'><br>
+                </div>
+                <input type="text" id="lf-am" class="lf-amm" name="lf-am" placeholder='Enter Amount'><br>
+                <!-- <label for="lf-name" class="bl">Gift Amount Options</label> 
+                <input type="email" id="lf-name" name="lf-name" placeholder='Enter your name' onkeyup='email_check();'><br>
+                
+                <label for="lf-phone" class="bl">Phone</label>
+                <input type="tel" id="lf-phone" name="lf-phone" placeholder='Enter your Number'><br>
+                
+                <label for="lf-company" class="bl">Company Name</label>
+                <input type="text" id="lf-company" name="lf-company" placeholder='Enter your Company name'><br>
+                
+                <label for="lf-message" class="bl">Job Description</label>
+                <textarea name="lf-message" id="lf-message" cols="30" placeholder="Add Job descriptions" rows="10"></textarea>
+
+                <a href = '#' id='login'>Login In</a><br> -->
+
+                <label for="lf-name" class="bl">Name</label>
+                <input type="text" id="lf-name" name="lf-name" placeholder='Enter your Number'><br>
+
+                <label for="lf-message" class="bl">Description</label>
+                <textarea name="lf-message" id="lf-message" cols="30" placeholder="Add descriptions" rows="3"></textarea>
+                
+                <p class ='lf-text-2'>Thank you for your interest in making a gift to Srinivas Institute of Technology.</p><br>
+                </form>
+            </div>
+        </div>
+    </sction>
+
+      
+    <footer>
+        <div class='footer_bar '>
+        <div class ='contacts align_center'>
+            <div class='icons align_center'><i class="fa-brands fa-facebook-f" style="color: #030303;"></i></div>
+            <div class='icons align_center'><i class="fa-brands fa-github" style="color: #000000;"></i></div>
+            <div class='icons align_center'><i class="fa-brands fa-github" style="color: #000000;"></i></div>
+            <div class='icons align_center'><i class="fa-brands fa-telegram" style="color: #000000;"></i></div>
+            <div class='icons align_center'><i class="fa-brands fa-instagram" style="color: #030303;"></i></div>
+            <div class='icons align_center'><i class="fa-brands fa-figma" style="color: #000000;"></i></div>
+        </div>
+        <div class ='naviagtions align_center'>
+            <ul class="footer-nav">
+            <li class="footer-nav-item">
+                <a class="footer-nav-link"  href="#">Community</a>
+            </li>
+            <li class="footer-nav-item">
+                <a class="footer-nav-link" href="#">Giving</a>
+            </li>
+            <li class="footer-nav-item">
+                <a class="footer-nav-link" href="#">Program & Event</a>
+            </li>
+            <li class="footer-nav-item">
+                <a class="footer-nav-link" href="#" >College</a>
+            </li>
+            <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#" >About Us</a>
+            </li>
+            </ul>
+            
+        </div>
+        <div class='btn_container align_center'><a class='btn_contactus'>Contact Us</a></div>
+        <div class ='line'></div>
+        <div class='tnc align_center'>© 2023 All Rights Reserved</div>
+        </div>
+    </footer>
+    <script >
+            const navLinks = document.querySelector('.nav-links');
+            let menuBtn = document.querySelector('.menu-btn');
+
+            menuBtn.addEventListener('click', function(){
+            menuBtn.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            })
+    </script>
+    </body>
+</html>
+  

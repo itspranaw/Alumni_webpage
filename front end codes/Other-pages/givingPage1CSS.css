@@ -1,0 +1,307 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  body{
+      margin: 0;
+      overflow-x: hidden;
+  }
+  .align_center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  /*--------------  css for header----------------*/
+  header{
+    position: relative;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background:white;
+  }
+  .container{
+    width:100%;
+    height:80px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    background:white;
+  }
+  .navbar{
+    float:right;
+     min-height: auto;
+     display: flex;
+     align-items: center;
+  }
+  .logo{
+    font-size: 2.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    float:left;
+  }
+  .nav-links{
+       display: flex;
+       align-items: center;
+      float:right;
+  }
+  .nav-links li{
+    list-style-type: none;
+  }
+  .nav-links li a{
+    text-decoration: none;
+     color: #000;
+     margin: 0 1.25rem;
+      font-weight: 500;
+     font-size: 1.05rem;
+    position: relative;
+     &::after{
+         position: absolute;
+         content: '';
+         background-color: #fff;
+         bottom: -5px;
+         left: 0;
+         width: 0%;
+         height: 3px;
+         transition: 0.3s ease all;
+         }
+          &:hover::after{
+             width: 100%;
+         }
+  }
+  .nav-links button{
+       border: none;
+       outline: none;
+       cursor: pointer;
+       padding: 0.75rem 1rem;
+       margin: 0 1rem;
+       border-radius: 6px;
+       background: black;
+        color: #fff;
+        font-weight: bold;
+  }
+  /*--------------  css for section & article----------------*/
+  footer{
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    background: black;
+    padding:10px;
+    
+  }
+  .footer_bar{
+    width:100%;
+  }
+  .icons {
+    background-color:white;
+    border-radius:12px;
+    scale:1.5;
+    width:25px;
+    height:25px;
+    margin:25px 20px;
+  }
+  .naviagtions{
+    width:100%;
+  }
+  .footer-nav{
+    display:flex;
+  }
+  .footer-nav-item{
+    list-style-type:none;
+    margin-top:10px;
+  }
+  .footer-nav-link{
+    text-decoration:none;
+    margin:10px;
+    color:  #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .btn_container{
+    width:100%;
+    height:max-content;
+    padding:10px;
+    }
+  .btn_contactus{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    padding: 5px 26px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: #FFF;
+  }
+   
+  .line{
+    width: 100%;
+  height: 1px;
+    background:#fff;
+    margin-top:15px;
+  }
+  .tnc{
+    width:100%;
+    color:  #FFF;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin:10px 0 0 0 ;
+  }
+
+
+
+  .sections{
+    height: 100vh;
+    
+  }
+  .sections.formSection{
+    overflow: hidden;
+    position: relative;
+    
+    
+  }
+  .formSection{
+    z-index: -1;
+    background-image: url('Images/Rectangle\ 22731.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    transform: translateY(0%);
+    background-size: 100vw 70vh;
+    
+  }
+
+  .login-container{
+    transform: translate(30% ,-15%);
+    /* transform: translateX(10%); */
+    width:40%;
+    height:100%;
+      display:flex;
+    justify-content:start;
+    align-items:center;
+    background-color:  #000;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+  }
+  .scanner{
+    margin-top:8%;
+    height: 79%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 45px;
+    background-color:  #000;
+    color: #FFF;
+  }
+  .lf-text-1.center{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+
+  .login-form{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:10px;
+    height:100%;
+    width: 60%;
+  }
+  .lf-text-1{
+    color: #fff;
+  font-family: Adamina;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  .lf-text-2{
+    color: #979797;
+  font-family: Adamina;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+  }
+   
+  .lf-text-2 a{
+    color: #000;
+  font-family: Adamina;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration-line: none;
+  }
+  #lf-name,#lf-phone,#lf-company,#lf-message{
+    display: inline-flex;
+  padding: 13px 12px;
+  align-items: flex-start;
+  gap: 10px;
+    border-radius: 8px;
+  border: 1px solid #DADADA;
+  background: transparent;
+  color: #979797;
+  margin-bottom: 10px;
+  }
+  #login{
+    color:#000;
+    display: flex;
+  padding: 10px 10px;
+  
+  gap: 10px;
+    justify-content:center;
+    border-radius: 4px;
+  background: #fff;
+    text-decoration:none;
+  }
+  .lf-image{
+    content:url("https://c.ndtvimg.com/2022-11/38ivuitg_graduation-generic-istock_625x300_01_November_22.jpg");
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .bl{
+    color: #fff;
+    margin-bottom: 10px;
+  }
+.con{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-bottom: 20px;
+}
+.lf-amm{
+    display: inline-flex;
+    padding: 13px 12px;
+    
+    width: 39%;
+      border-radius: 8px;
+    border: 1px solid #DADADA;
+    background: transparent;
+}
+.lf-am{
+    display: inline-flex;
+    padding: 13px 12px;
+    
+    width: 30%;
+      border-radius: 8px;
+    border: 1px solid #DADADA;
+    background: transparent;
+}
+#lf-message{
+    margin-bottom: 10px;
+}
