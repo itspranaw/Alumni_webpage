@@ -165,7 +165,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  padding: 10px;
+  padding: 5px;
   background-color: black;
 }
 .card {
@@ -174,9 +174,10 @@ section {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  margin: 25px;
+  margin: 5px;
   overflow: hidden;
   padding: 0px;
+  scale: 0.6;
 }
 
 .card img {
@@ -218,7 +219,6 @@ section {
 }
 
 .card {
-  position: ;
   display: inline-block;
 }
 
