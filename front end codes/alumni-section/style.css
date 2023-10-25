@@ -165,7 +165,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 25px;
   background-color: black;
 }
 .card {
@@ -174,10 +174,10 @@ section {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  margin: -15px;
+  margin: 0px;
   overflow: hidden;
   padding: 0px;
-  scale: 0.8;
+  scale: 0.95;
 }
 
 .card img {
