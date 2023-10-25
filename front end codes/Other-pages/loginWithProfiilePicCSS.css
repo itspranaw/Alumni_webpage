@@ -12,16 +12,19 @@
     height:100%;
     width:100%;
     display:flex;
-    padding-top: 100px;
+    
+    background-color: aquamarine;
+    
   }
   
   .login-container{
+    position: relative;
     width:50%;
-    height:100%;
+    height:150%;
       display:flex;
     justify-content:center;
     align-items:center;
-    background-color: aqua;
+    background-color: #fff;
   }
   .login-form{
     display:flex;
@@ -29,6 +32,7 @@
     justify-content:center;
     padding:10px;
     height:100%;
+    width: 50%;
   }
   .lf-text-1{
     color: #000;
@@ -54,6 +58,7 @@
   gap: 10px;
     border-radius: 8px;
   border: 1px solid #DADADA;
+  
   }
   #Signup{
     color:white;
@@ -67,16 +72,11 @@
   .lf-image{
     content:url("https://c.ndtvimg.com/2022-11/38ivuitg_graduation-generic-istock_625x300_01_November_22.jpg");
     width: 50%;
-    height: 100%;
-    object-fit: cover;
+    height: 150%;
+    
   }
   
-  .lf-image{
-    content:url("https://c.ndtvimg.com/2022-11/38ivuitg_graduation-generic-istock_625x300_01_November_22.jpg");
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-  }
+ 
 
 
   /* My[kishan] code starts here  */
@@ -103,7 +103,7 @@
     height: 100%;
     width: 100%;
     
-    background-color: aqua;
+    
     cursor: pointer;
     opacity: 0;
   }
