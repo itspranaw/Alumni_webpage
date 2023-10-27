@@ -156,4 +156,133 @@
     line-height: normal;
     margin: 10px 0 0 0;
   }
+
+
+/*---------------------------------------section----------*/
+section {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color:white;
+  }
+  .card {
+    width: calc(30% - 90px);
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 25px;
+    overflow: hidden;
+    padding: 0px;
+    /* z-index: ; */
+  }
+
+  .card img {
+    width: 100%;
+    /* height: auto; */
+    display: block;
+    border-radius: 10px 10px 0 0;
+  }
+  .card p {
+    text-align: center; /* Center-align the text within the paragraph */
+    padding: 10px;
+    color: #676767;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .card h2 {
+    text-align: center; /* Center-align the text within the paragraph */
+    padding: 10px;
+    color: #0A0A0A;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  } 
+   .card .card-text{
+    color: #676767; 
+
+    /* Dark - Heading 2 */
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 0 0 10px;
+  } 
+  
+  .heads{
+    width: 100%;
+    font-size: 30px;
+    margin: 0 0 0 10%;
+    font-family: Poppins;
+  }
+
+  
+#development-team {
+  text-align: center;
+  padding: 20px;
+  /* background-color: #333; */
+}
+
+#development-team a {
+  /* color: #fff; */
+  text-decoration: none;
+}
+   
+
+  @media (max-width: 830px) {
+    section {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .card{
+      height: 100%;
+      width: 70%;
+      padding-top: 5px;
+    }
+  
+    .card img {
+      height: 100%;
+      width: 100%;
+    }
+    .card p{
+        font-size: 20px;
+      }
+
+    .card h2{
+      font-size: 20px;
+    }
+    .header{
+      font-size: 20px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    }
+    @media (max-width: 200px){
+    .heads{
+      width: 100%;
+    }
+    #development-team{
+      width: 100%;
+    }
+  }
+   
+
+
   
