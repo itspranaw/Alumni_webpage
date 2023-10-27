@@ -504,6 +504,7 @@ footer {
   line-height: 150%; /* 75px */
   margin-bottom: 20px;
 }
+
 .black .s1 .p2 {
   color: #fff;
   font-family: Adamina;
@@ -512,6 +513,12 @@ footer {
   font-weight: 400;
   line-height: 24px; /* 133.333% */
   width: 799px;
+}
+.black .s1 .p2 .viewOurBoardMember{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  
 }
 .box2.b {
   height: 60vh;
